@@ -1,7 +1,9 @@
 # passlock
 A gem that makes ideal passwords in various ways.
+
 ## Dependencies
-  * (ruby-hmac)[https://github.com/topfunky/ruby-hmac]
+* [ruby-hmac](https://github.com/topfunky/ruby-hmac)
+
 ## Examples
 Installing PassLock is very easy!
 ```ruby
