@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = 'botboybeta@yahoo.com'
   gem.summary       = 'A gem that makes ideal passwords in various ways.'
   gem.description   = 'A gem that makes ideal passwords in various ways.'
-  gem.files         = ["lib/passlock.rb", "lib/passlock/class.rb", "lib/passlock/version.rb"]
+  gem.files         = ['lib/passlock.rb', 'lib/passlock/class.rb', 'lib/passlock/version.rb']
   gem.homepage      = 'https://github.com/SnazzyPine25/passlock'
   gem.license       = 'MIT'
 
