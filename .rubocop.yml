@@ -44,13 +44,3 @@ AllCops:
 # http://stackoverflow.com/questions/4763121/should-i-use-alias-or-alias-method
 Style/Alias:
   Enabled: false
-
-# So RuboCop doesn't complain about application IDs
-Style/NumericLiterals:
-  Exclude:
-    - examples/*
-
-# Ignore `eval` in the examples folder
-Lint/Eval:
-  Exclude:
-    - examples/*
