@@ -12,6 +12,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ['Snazzah']
   gem.email         = 'botboybeta@yahoo.com'
 <<<<<<< HEAD
+<<<<<<< HEAD
   gem.summary       = 'A gem that makes ideal passwords in various ways.'
   gem.description   = 'A gem that makes ideal passwords in various ways.'
   gem.files         = ['lib/passlock.rb', 'lib/passlock/class.rb', 'lib/passlock/version.rb']
@@ -19,6 +20,11 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A gem that makes ideal passwords in various ways.}
   gem.description   = %q{A gem that makes ideal passwords in various ways.}
   gem.files         = ["lib/passlock.rb","lib/passlock/class.rb","lib/passlock/version.rb"]
+>>>>>>> refs/remotes/origin/master
+=======
+  gem.summary       = 'A gem that makes ideal passwords in various ways.'
+  gem.description   = 'A gem that makes ideal passwords in various ways.'
+  gem.files         = ['lib/passlock.rb', 'lib/passlock/class.rb', 'lib/passlock/version.rb']
 >>>>>>> refs/remotes/origin/master
   gem.homepage      = 'https://github.com/SnazzyPine25/passlock'
   gem.license       = 'MIT'
