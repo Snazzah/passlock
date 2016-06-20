@@ -9,7 +9,7 @@ class String
   def to_base
     Base64.encode64 self
   end
-  alias_method :to_base64, to_base
+  alias_method :to_base64, :to_base
 
   # @see PassLock#sha1
   def to_sha1
@@ -35,5 +35,5 @@ class String
   def to_basehash
     Base64.encode64((HMAC::SHA1.new(self) << 'base').digest).strip
   end
-  alias_method :to_base64hash, to_basehash
+  alias_method :to_base64hash, :to_basehash
 end
