@@ -25,9 +25,7 @@ module PassLock
     chars = []
     result = ""
     options.each do |flag|
-      if not @opts[flag].nil?
-        chars.concat(@opts[flag].scan(/./))
-      end
+      chars.concat(@opts[flag].scan(/./)) unless !@opts[flag].nil?
     end
     length.to_i.times do
       result += chars.sample
@@ -69,7 +67,7 @@ module PassLock
   # @return [String] The SHA256 hash
   def self.sha256(pass, layers: 1)
     layers.times do
-      pass = Digest::SHA256.new().update(pass).to_s
+      pass = Digest::SHA256.new.update(pass).to_s
     end
     pass
   end
@@ -79,10 +77,10 @@ module PassLock
   # @param layers [Fixnum] The amount of layering
   # @return [String] The SHA384 hash
   def self.sha384(pass, layers: 1)
-      layers.times do
-          pass = Digest::SHA384.new.update(pass).to_s
-      end
-      pass
+    layers.times do
+      pass = Digest::SHA384.new.update(pass).to_s
+    end
+    pass
   end
 
   # Creats a SHA512 hash.
