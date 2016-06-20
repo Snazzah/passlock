@@ -1,4 +1,6 @@
-[![Gem Version](https://img.shields.io/gem/v/passlock.svg)]() [![Gem Downloads](https://img.shields.io/gem/dt/passlock.svg)]() [![Travis](https://img.shields.io/travis/SnazzyPine25/passlock.svg)]()
+[![Gem Version](https://img.shields.io/gem/v/passlock.svg)]()
+[![Gem Downloads](https://img.shields.io/gem/dt/passlock.svg)]() [![Travis](https://img.shields.io/travis/SnazzyPine25/passlock.svg)]()
+[![Inline docs](http://inch-ci.org/github/SnazzyPine25/passlock.svg?branch=master&style=shields)](http://inch-ci.org/github/SnazzyPine25/passlock)
 # passlock
 A gem that makes ideal passwords in various ways.
 
