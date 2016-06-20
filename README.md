@@ -19,8 +19,12 @@ PassLock.sha256 'do'
 PassLock.sha384 'you'
 PassLock.sha512 'do?'
 ```
-PassLock also makes modules into String...
+You can also encrypt in layers!
+```ruby
+PassLock.base64('somepass', layers: 20)
 ```
+PassLock also makes modules into String...
+```ruby
 'liven'.to_sha1
 'up'.to_sha256
 'some!'.to_basehash
