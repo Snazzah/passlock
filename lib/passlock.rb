@@ -12,7 +12,7 @@ module PassLock
     'number' => '1234567890',
     'upletter' => 'qwertyuiopasdfghjklzxcvbnm'.upcase,
     'downletter' => 'qwertyuiopasdfghjklzxcvbnm',
-    'symbols' => %q{`~!@#$%^&*()_+-=[]{}\|;':",.<>/?}
+    'symbols' => %q(`~!@#$%^&*()_+-=[]{}\|;':",.<>/?)
   }
 
   # A randomly generated passord.
@@ -20,12 +20,12 @@ module PassLock
   # @param length [Integer] How long the password will be
   # @return [String] Returns the Base64-encoded version of the password.
   def self.cpass(options, length)
-    options = options != Array || options.empty? ? options : %w{number upletter downletter symbol}
+    options = options != Array || options.empty? ? options : %w(number upletter downletter symbol)
     length = length.is_a(Integer) && length > 0 ? length : 10
     chars = []
-    result = ""
+    result = ''
     options.each do |flag|
-      chars.concat(@opts[flag].scan(/./)) unless !@opts[flag].nil?
+      chars.concat(@opts[flag].scan(/./)) unless @opts[flag].nil?
     end
     length.to_i.times do
       result += chars.sample
@@ -105,8 +105,8 @@ module PassLock
     pass
   end
 
+  # Decode module
   class Decode
-
     # Decodes password in Base64.
     # @param base [String] The Base64-encoded of the original password
     # @return [String] Returns the decoded password
