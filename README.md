@@ -1,3 +1,4 @@
+[![Gem Version](https://img.shields.io/gem/v/passlock.svg)]()(https://badge.fury.io/rb/passlock)[![Gem Downloads](https://img.shields.io/gem/dt/passlock.svg)]()[![Travis](https://img.shields.io/travis/SnazzyPine25/passlock.svg)]()
 # passlock
 A gem that makes ideal passwords in various ways.
 
