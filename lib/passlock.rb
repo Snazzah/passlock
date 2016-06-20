@@ -21,7 +21,7 @@ module PassLock
   # @return [String] Returns the Base64-encoded version of the password.
   def self.cpass(options, length)
     options = options != Array || options.empty? ? options : %w(number upletter downletter symbol)
-    length = length.is_a(Integer) && length > 0 ? length : 10
+    length = length.is_a?(Integer) && length > 0 ? length : 10
     chars = []
     result = ''
     options.each do |flag|
